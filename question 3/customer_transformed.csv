@@ -1,0 +1,11 @@
+CustomerID,Name,Age,Income,Gender_Female,Gender_Male,City_Bangalore,City_Belagavi,City_Dharwad,City_Hubli,City_Mangalore,City_Mysore,AgeGroup_Adult,AgeGroup_Child,AgeGroup_Senior
+101,Ram,0.0517241379310345,0.1111111111111111,False,True,True,False,False,False,False,False,True,False,False
+102,Sita,0.22413793103448273,0.4444444444444444,True,False,False,False,False,False,False,True,True,False,False
+103,Ravi,0.5689655172413793,0.7777777777777778,False,True,False,False,False,True,False,False,True,False,False
+104,Anu,0.9137931034482758,0.5555555555555556,True,False,False,False,False,False,True,False,False,False,True
+105,Kiran,0.0,0.0,False,True,False,True,False,False,False,False,False,True,False
+106,Meena,0.3448275862068966,0.6666666666666666,True,False,True,False,False,False,False,False,True,False,False
+107,Arjun,1.0,1.0,False,True,False,False,False,False,False,True,False,False,True
+108,Priya,0.10344827586206898,0.2222222222222222,True,False,False,False,False,True,False,False,True,False,False
+109,Rohan,0.7413793103448276,0.8222222222222223,False,True,False,False,True,False,False,False,True,False,False
+110,Kavya,0.27586206896551724,0.5111111111111111,True,False,True,False,False,False,False,False,True,False,False
