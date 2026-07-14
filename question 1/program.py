@@ -1,31 +1,45 @@
+# Import Libraries
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-# Step 1: Create sample data
-data = {
-    "ID": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "Name": ["Asha", "Bharath", "Charan", "Deepa", "Esha", "Farhan",
-             "Gita", "Hari", "Isha", "John", "Kiran", "Lakshmi"],
-    "Age": [20, 21, 19, 22, 20, 23, 21, 20, 22, 19, 21, 20],
-    "Marks": [85, 90, 78, 88, 92, 75, 81, 95, 89, 77, 84, 91]
-}
+# Load the student dataset
+df = pd.read_csv("student.csv")
 
-# Step 2: Convert the data into a DataFrame
-df = pd.DataFrame(data)
+# Display the first 5 rows
+print("First 5 Rows of the Dataset:")
+print(df.head())
 
-# Step 3: Save the DataFrame as a CSV file
-df.to_csv("students.csv", index=False)
+# Display dataset information
+print("\nDataset Information:")
+print(df.info())
 
-# Step 4: Load the CSV file into a DataFrame
-df = pd.read_csv("students.csv")
-
-# Step 5: Display the first 10 rows
-print("First 10 Rows:")
-print(df.head(10))
-
-# Step 6: Display the number of rows and columns
-print("\nNumber of Rows:", df.shape[0])
-print("Number of Columns:", df.shape[1])
-
-# Step 7: Display summary statistics for numerical columns
+# Display summary statistics
 print("\nSummary Statistics:")
 print(df.describe())
+
+# Select only numerical columns
+numerical_features = df.select_dtypes(include=['int64', 'float64'])
+
+# -------------------------------
+# Histogram of Numerical Features
+# -------------------------------
+numerical_features.hist(figsize=(12, 8), bins=10, edgecolor='black')
+
+plt.suptitle("Histogram of Numerical Features")
+plt.tight_layout()
+plt.show()
+
+# -------------------------------
+# Box Plot of Numerical Features
+# -------------------------------
+plt.figure(figsize=(10, 6))
+
+sns.boxplot(data=numerical_features)
+
+plt.title("Box Plot of Numerical Features")
+plt.xlabel("Features")
+plt.ylabel("Values")
+plt.xticks(rotation=45)
+
+plt.show()
