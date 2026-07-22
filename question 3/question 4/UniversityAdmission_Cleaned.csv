@@ -1,0 +1,6 @@
+Application_No,Student_Name,Age,Gender,Board_Percentage,Entrance_Exam_Score,Reservation_Category,Branch_Preference,Admission_Status,Family_Income
+1001,Ramya,19,Female,92,88,GM,CSE,Selected,600000
+1002,Ravi,18,Male,85,76,OBC,ECE,Selected,450000
+1003,Priya,20,Female,78,69,SC,ISE,Waiting,300000
+1004,Amit,21,Male,91,95,GM,CSE,Selected,700000
+1005,Kiran,17,Male,65,58,ST,ME,Rejected,250000
